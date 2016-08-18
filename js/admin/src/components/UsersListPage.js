@@ -31,7 +31,7 @@ function UserItem(user) {
                     user.discussionsCount()
                 ]),
                 m('a', {
-                    className: 'UsersListItem-discussions',
+                    className: 'Button Button--link',
                     target: '_blank',
                     href: url
                 }, [

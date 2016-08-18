@@ -4,9 +4,6 @@
     color: @control-color;
     padding: 20px 0;
 
-    .container {
-      max-width: 600px;
-    }
     p {
       margin-bottom: 20px;
     }
@@ -17,10 +14,6 @@
 
   .UsersListPage-list {
     padding: 20px 0;
-
-    .container {
-      max-width: 600px;
-    }
   }
 
   .UsersList {
@@ -42,6 +35,18 @@
 
     &:hover {
       background: @control-bg;
+    }
+    & > * { display: inline-block; }
+
+    .UsersListItem-name,
+    .UserCard-lastSeen {
+      width: 150px;
+      margin: 0;
+    }
+
+    .UsersListItem-comments,
+    .UsersListItem-discussions {
+      width: 70px;
     }
 
     .Button {

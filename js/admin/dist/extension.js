@@ -197,7 +197,7 @@ System.register('avatar4eg/users-list/components/UsersListPage', ['flarum/app', 
         var online = user.isOnline();
 
         return [m('li', { "data-id": user.id() }, [m('div', { className: 'UsersListItem-info' }, [m('span', { className: 'UsersListItem-name' }, [user.username()]), m('span', { className: 'UserCard-lastSeen' + (online ? ' online' : '') }, [online ? [icon('circle'), ' ', app.translator.trans('avatar4eg-users-list.admin.page.online_text')] : [icon('clock-o'), ' ', humanTime(user.lastSeenTime())]]), m('span', { className: 'UsersListItem-comments' }, [icon('comment-o'), user.commentsCount()]), m('span', { className: 'UsersListItem-discussions' }, [icon('reorder'), user.discussionsCount()]), m('a', {
-            className: 'UsersListItem-discussions',
+            className: 'Button Button--link',
             target: '_blank',
             href: url
         }, [icon('eye')]), Button.component({

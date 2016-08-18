@@ -67,14 +67,14 @@ class SendAdminEmailController implements ControllerInterface
                     $email = $user->email;
                     $this->mailer->raw($data['text'], function (Message $message) use ($email, $data) {
                         $message->to($email);
-                        $message->subject('[' . $this->settings->get('forum_title') . '] ' . $data['subject'] !== '' ? $data['subject'] : $this->translator->trans('avatar4eg-users-list.email.default_subject'));
+                        $message->subject('[' . $this->settings->get('forum_title') . '] ' . ($data['subject'] !== '' ? $data['subject'] : $this->translator->trans('avatar4eg-users-list.email.default_subject')));
                     });
                 }
             } else {
                 foreach ($data['emails'] as $email) {
                     $this->mailer->raw($data['text'], function (Message $message) use ($email, $data) {
                         $message->to($email);
-                        $message->subject('[' . $this->settings->get('forum_title') . '] ' . $data['subject'] !== '' ? $data['subject'] : $this->translator->trans('avatar4eg-users-list.email.default_subject'));
+                        $message->subject('[' . $this->settings->get('forum_title') . '] ' . ($data['subject'] !== '' ? $data['subject'] : $this->translator->trans('avatar4eg-users-list.email.default_subject')));
                     });
                 }
             }
