@@ -1,6 +1,6 @@
 {
   "name": "avatar4eg/flarum-ext-users-list",
-  "description": "Add users list in admin pannel",
+  "description": "Add users list in admin panel.",
   "type": "flarum-extension",
   "keywords": ["users", "admin"],
   "license": "MIT",

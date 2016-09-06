@@ -57,13 +57,13 @@ System.register('avatar4eg/users-list/components/EmailUserModal', ['flarum/app',
 
                 function EmailUserModal() {
                     babelHelpers.classCallCheck(this, EmailUserModal);
-                    return babelHelpers.possibleConstructorReturn(this, Object.getPrototypeOf(EmailUserModal).apply(this, arguments));
+                    return babelHelpers.possibleConstructorReturn(this, (EmailUserModal.__proto__ || Object.getPrototypeOf(EmailUserModal)).apply(this, arguments));
                 }
 
                 babelHelpers.createClass(EmailUserModal, [{
                     key: 'init',
                     value: function init() {
-                        babelHelpers.get(Object.getPrototypeOf(EmailUserModal.prototype), 'init', this).call(this);
+                        babelHelpers.get(EmailUserModal.prototype.__proto__ || Object.getPrototypeOf(EmailUserModal.prototype), 'init', this).call(this);
 
                         this.loading = false;
 
@@ -232,13 +232,13 @@ System.register('avatar4eg/users-list/components/UsersListPage', ['flarum/app', 
 
                 function UsersListPage() {
                     babelHelpers.classCallCheck(this, UsersListPage);
-                    return babelHelpers.possibleConstructorReturn(this, Object.getPrototypeOf(UsersListPage).apply(this, arguments));
+                    return babelHelpers.possibleConstructorReturn(this, (UsersListPage.__proto__ || Object.getPrototypeOf(UsersListPage)).apply(this, arguments));
                 }
 
                 babelHelpers.createClass(UsersListPage, [{
                     key: 'init',
                     value: function init() {
-                        babelHelpers.get(Object.getPrototypeOf(UsersListPage.prototype), 'init', this).call(this);
+                        babelHelpers.get(UsersListPage.prototype.__proto__ || Object.getPrototypeOf(UsersListPage.prototype), 'init', this).call(this);
 
                         this.loading = true;
                         this.moreResults = false;
