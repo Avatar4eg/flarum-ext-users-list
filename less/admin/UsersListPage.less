@@ -14,55 +14,87 @@
 
   .UsersListPage-list {
     padding: 20px 0;
-  }
 
-  .UsersList {
-    list-style: none;
-    padding: 10px 0;
-    margin: 0;
-    color: @muted-color;
-    font-size: 16px;
+    .UsersListItems {
+      padding-left: 150px;
 
-    > .sortable-placeholder {
-      height: 34px;
-      margin-bottom: 10px;
-    }
-  }
+      > label {
+        margin-left: -150px;
+        float: left;
+        font-weight: bold;
+        margin-top: 14px;
+      }
 
-  .UsersListItem-info {
-    padding: 5px 10px;
-    border-radius: @border-radius;
+      .UsersList {
+        list-style: none;
+        padding: 10px 0;
+        margin: 0;
+        color: @muted-color;
+        font-size: 16px;
 
-    &:hover {
-      background: @control-bg;
-    }
-    & > * { display: inline-block; }
+        > .sortable-placeholder {
+          height: 34px;
+          margin-bottom: 10px;
+        }
 
-    .UsersListItem-name,
-    .UserCard-lastSeen {
-      width: 150px;
-      margin: 0;
-    }
+        li {
+          .UsersListItem-info {
+            padding: 5px 10px;
+            border-radius: @border-radius;
 
-    .UsersListItem-comments,
-    .UsersListItem-discussions {
-      width: 70px;
-    }
+            &:hover { background: @control-bg; }
+            & > * { display: inline-block; }
 
-    .Button {
-      float: right;
-      margin: -8px -10px -8px 10px;
-    }
-  }
+            .UsersListItem-name,
+            .UserCard-lastSeen {
+              width: 200px;
+              margin: 0;
+            }
 
-  .UsersListItems {
-    padding-left: 150px;
+            .UsersListItem-comments,
+            .UsersListItem-discussions {
+              width: 70px;
+            }
 
-    > label {
-      margin-left: -150px;
-      float: left;
-      font-weight: bold;
-      margin-top: 14px;
+            .Button {
+              float: right;
+              margin: -8px -10px -8px 10px;
+            }
+          }
+        }
+      }
+
+      @media only screen and (max-width: 529px) {
+        .UsersList {
+          li {
+            .UsersListItem-info {
+              font-size: 12px;
+
+              .UsersListItem-name { width: 110px; }
+              .UserCard-lastSeen { display: none; }
+
+              .UsersListItem-comments,
+              .UsersListItem-discussions {
+                width: 50px;
+              }
+
+              .Button {
+                float: right;
+                margin-left: 0;
+                padding: 8px;
+              }
+            }
+          }
+        }
+      }
+
+      @media only screen and (max-width: 1024px) {
+        padding-left: 0;
+        > label {
+          margin-left: 0;
+          float: none;
+        }
+      }
     }
   }
 }
