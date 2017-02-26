@@ -60,7 +60,7 @@ class SendAdminEmailController implements ControllerInterface
         if ($actor !== null && $actor->isAdmin()) {
             $data = array_get($request->getParsedBody(), 'data', []);
 
-            if ($data['forAll']) {
+            if (isset($data['forAll']) && !empty($data['forAll'])) {
                 $users = $this->users->query()->whereVisibleTo($actor)->get();
                 foreach ($users as $user) {
                     $this->sendMail($user->email, $data['subject'], $data['text']);
@@ -77,7 +77,7 @@ class SendAdminEmailController implements ControllerInterface
 
     protected function sendMail($email, $subject, $text)
     {
-        $this->mailer->queue(['raw' => $text], [], function (Message $message) use ($email, $subject) {
+        $this->mailer->send(['raw' => $text], [], function (Message $message) use ($email, $subject) {
             $message->to($email);
             $message->subject('[' . $this->settings->get('forum_title') . '] ' . ($subject !== '' ? $subject : $this->translator->trans('avatar4eg-users-list.email.default_subject')));
         });
