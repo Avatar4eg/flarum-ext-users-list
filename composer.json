@@ -1,5 +1,5 @@
 {
-  "name": "avatar4eg/flarum-ext-users-list",
+  "name": "issyrocks12/flarum-ext-users-list",
   "description": "Add users list in admin panel.",
   "type": "flarum-extension",
   "keywords": ["users", "admin"],
@@ -8,14 +8,18 @@
     {
       "name": "Nikolai Morozov",
       "email": "avanmorozov@gmail.com"
+    },
+    {
+      "name": "Charlie K",
+      "email": "charlie@jailbreakhub.org"
     }
   ],
   "require": {
-    "flarum/core": "^0.1.0-beta.5"
+    "flarum/core": "^0.1.0-beta.7"
   },
   "autoload": {
     "psr-4": {
-      "Avatar4eg\\UsersList\\": "src/"
+      "issyrocks12\\UsersList\\": "src/"
     }
   },
   "extra": {
