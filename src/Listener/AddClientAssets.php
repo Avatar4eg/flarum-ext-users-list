@@ -1,5 +1,5 @@
 <?php
-namespace Avatar4eg\UsersList\Listener;
+namespace issyrocks12\UsersList\Listener;
 
 use DirectoryIterator;
 use Flarum\Event\ConfigureWebApp;
