@@ -1,4 +1,4 @@
-avatar4eg-users-list:
+issyrocks12-users-list:
   admin:
     nav:
       users_button: => avatar4eg-users-list.ref.users_title
