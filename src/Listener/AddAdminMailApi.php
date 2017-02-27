@@ -1,7 +1,7 @@
 <?php
-namespace Avatar4eg\UsersList\Listener;
+namespace issyrocks12\UsersList\Listener;
 
-use Avatar4eg\UsersList\Api\Controller\SendAdminEmailController;
+use issyrocks12\UsersList\Api\Controller\SendAdminEmailController;
 use Flarum\Api\Serializer\ForumSerializer;
 use Flarum\Event\ConfigureApiRoutes;
 use Flarum\Event\PrepareApiAttributes;
