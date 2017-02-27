@@ -14,7 +14,7 @@ export default class EmailUserModal extends Modal {
 
         this.user = this.props.user;
         this.forAll = this.props.forAll;
-        this.subject = m.prop(app.translator.trans('avatar4eg-users-list.admin.modal_mail.default_subject')[0]);
+        this.subject = m.prop(app.translator.trans('issyrocks12-users-list.admin.modal_mail.default_subject')[0]);
         this.messageText = m.prop('');
 
         if (!this.forAll) {
@@ -30,9 +30,9 @@ export default class EmailUserModal extends Modal {
     }
 
     title() {
-        var title = app.translator.trans('avatar4eg-users-list.admin.modal_mail.title_text');
+        var title = app.translator.trans('issyrocks12-users-list.admin.modal_mail.title_text');
         if (this.forAll) {
-            title += ' ' + app.translator.trans('avatar4eg-users-list.admin.modal_mail.title_all_text');
+            title += ' ' + app.translator.trans('issyrocks12-users-list.admin.modal_mail.title_all_text');
         } else {
             title += ' ' + this.user.username() + ' (' + this.email() + ')';
         }
