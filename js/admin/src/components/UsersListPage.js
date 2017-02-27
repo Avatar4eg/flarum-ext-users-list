@@ -5,7 +5,7 @@ import LoadingIndicator from 'flarum/components/LoadingIndicator';
 import humanTime from 'flarum/helpers/humanTime';
 import icon from 'flarum/helpers/icon';
 
-import EmailUserModal from 'avatar4eg/users-list/components/EmailUserModal';
+import EmailUserModal from 'issyrocks12/users-list/components/EmailUserModal';
 
 function UserItem(user) {
     const url = app.forum.attribute('baseUrl') + '/u/' + user.id();
@@ -19,7 +19,7 @@ function UserItem(user) {
                 ]),
                 m('span', {className: 'UserCard-lastSeen' + (online ? ' online' : '')}, [
                     online
-                        ? [icon('circle'), ' ', app.translator.trans('avatar4eg-users-list.admin.page.online_text')]
+                        ? [icon('circle'), ' ', app.translator.trans('issyrocks12-users-list.admin.page.online_text')]
                         : [icon('clock-o'), ' ', humanTime(user.lastSeenTime())]
                 ]),
                 m('span', {className: 'UsersListItem-comments'}, [
@@ -67,7 +67,7 @@ export default class UsersListPage extends Page {
             loading = LoadingIndicator.component();
         } else if (this.moreResults) {
             loading = Button.component({
-                children: app.translator.trans('avatar4eg-users-list.admin.page.load_more_button'),
+                children: app.translator.trans('issyrocks12-users-list.admin.page.load_more_button'),
                 className: 'Button',
                 onclick: this.loadMore.bind(this)
             });
@@ -77,11 +77,11 @@ export default class UsersListPage extends Page {
             m('div', {className: 'UsersListPage'}, [
                 m('div', {className: 'UsersListPage-header'}, [
                     m('div', {className: 'container'}, [
-                        m('p', {}, app.translator.trans('avatar4eg-users-list.admin.page.about_text')),
+                        m('p', {}, app.translator.trans('issyrocks12-users-list.admin.page.about_text')),
                         Button.component({
                             className: 'Button Button--primary',
                             icon: 'plus',
-                            children: app.translator.trans('avatar4eg-users-list.admin.page.mail_all_button'),
+                            children: app.translator.trans('issyrocks12-users-list.admin.page.mail_all_button'),
                             onclick: () => app.modal.show(new EmailUserModal({'forAll': true}))
                         })
                     ])
@@ -89,7 +89,7 @@ export default class UsersListPage extends Page {
                 m('div', {className: 'UsersListPage-list'}, [
                     m('div', {className: 'container'}, [
                         m('div', {className: 'UsersListItems'}, [
-                            m('label', {}, app.translator.trans('avatar4eg-users-list.admin.page.list_title')),
+                            m('label', {}, app.translator.trans('issyrocks12-users-list.admin.page.list_title')),
                             m('ol', {
                                     className: 'UsersList'
                                 },
