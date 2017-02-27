@@ -6,12 +6,12 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Nikolai Morozov",
-      "email": "avanmorozov@gmail.com"
-    },
-    {
       "name": "Charlie K",
       "email": "charlie@jailbreakhub.org"
+    },
+    {
+      "name": "Nikolai Morozov",
+      "email": "avanmorozov@gmail.com"
     }
   ],
   "require": {
