@@ -1,5 +1,5 @@
 <?php
-namespace Avatar4eg\UsersList;
+namespace issyrocks12\UsersList;
 
 use Illuminate\Contracts\Events\Dispatcher;
 
