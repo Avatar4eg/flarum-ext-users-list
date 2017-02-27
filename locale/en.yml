@@ -8,7 +8,7 @@ issyrocks12-users-list:
       online_text: => core.forum.user.online_text
       load_more_button: => core.ref.load_more
       list_title: => issyrocks12-users-list.ref.users_title
-      mail_all_button: Mail to all users
+      mail_all_button: Send mail to all users
     modal_mail:
       title_text: Message for
       title_all_text: all users
