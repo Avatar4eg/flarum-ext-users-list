@@ -14,7 +14,7 @@ export default class EmailUserModal extends Modal {
 
         this.user = this.props.user;
         this.forAll = this.props.forAll;
-        this.subject = m.prop(app.translator.trans('avatar4eg-users-list.admin.modal_mail.default_subject')[0]);
+        this.subject = m.prop(app.translator.trans('issyrocks12-users-list.admin.modal_mail.default_subject')[0]);
         this.messageText = m.prop('');
 
         if (!this.forAll) {
@@ -30,9 +30,9 @@ export default class EmailUserModal extends Modal {
     }
 
     title() {
-        var title = app.translator.trans('avatar4eg-users-list.admin.modal_mail.title_text');
+        var title = app.translator.trans('issyrocks12-users-list.admin.modal_mail.title_text');
         if (this.forAll) {
-            title += ' ' + app.translator.trans('avatar4eg-users-list.admin.modal_mail.title_all_text');
+            title += ' ' + app.translator.trans('issyrocks12-users-list.admin.modal_mail.title_all_text');
         } else {
             title += ' ' + this.user.username() + ' (' + this.email() + ')';
         }
@@ -48,7 +48,7 @@ export default class EmailUserModal extends Modal {
                     },
                     [
                         this.forAll ? '' : m('div', {className: 'Form-group'}, [
-                            m('label', {}, app.translator.trans('avatar4eg-users-list.admin.modal_mail.email_label')),
+                            m('label', {}, app.translator.trans('issyrocks12-users-list.admin.modal_mail.email_label')),
                             m('input', {
                                 className: 'FormControl',
                                 value: this.email(),
@@ -56,7 +56,7 @@ export default class EmailUserModal extends Modal {
                             })
                         ]),
                         m('div', {className: 'Form-group'}, [
-                            m('label', {}, app.translator.trans('avatar4eg-users-list.admin.modal_mail.subject_label')),
+                            m('label', {}, app.translator.trans('issyrocks12-users-list.admin.modal_mail.subject_label')),
                             m('input', {
                                 className: 'FormControl',
                                 value: this.subject(),
@@ -64,7 +64,7 @@ export default class EmailUserModal extends Modal {
                             })
                         ]),
                         m('div', {className: 'Form-group'}, [
-                            m('label', {}, app.translator.trans('avatar4eg-users-list.admin.modal_mail.message_label')),
+                            m('label', {}, app.translator.trans('issyrocks12-users-list.admin.modal_mail.message_label')),
                             m('textarea', {
                                 className: 'FormControl',
                                 rows: 10,
@@ -77,7 +77,7 @@ export default class EmailUserModal extends Modal {
                             type: 'submit',
                             className: 'Button Button--primary EditContactModal-save',
                             loading: this.loading,
-                            children: app.translator.trans('avatar4eg-users-list.admin.modal_mail.submit_button'),
+                            children: app.translator.trans('issyrocks12-users-list.admin.modal_mail.submit_button'),
                             disabled: this.submitDisabled
                         })
                     ]

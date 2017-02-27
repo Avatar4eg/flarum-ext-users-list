@@ -1,6 +1,6 @@
 'use strict';
 
-System.register('avatar4eg/users-list/addUsersListPane', ['flarum/app', 'flarum/extend', 'flarum/components/AdminNav', 'flarum/components/AdminLinkButton', 'avatar4eg/users-list/components/UsersListPage'], function (_export, _context) {
+System.register('issyrocks12/users-list/addUsersListPane', ['flarum/app', 'flarum/extend', 'flarum/components/AdminNav', 'flarum/components/AdminLinkButton', 'issyrocks12/users-list/components/UsersListPage'], function (_export, _context) {
     "use strict";
 
     var app, extend, AdminNav, AdminLinkButton, CountriesPage;
@@ -8,7 +8,7 @@ System.register('avatar4eg/users-list/addUsersListPane', ['flarum/app', 'flarum/
     _export('default', function () {
         app.routes.usersList = { path: '/users-list', component: CountriesPage.component() };
 
-        app.extensionSettings['avatar4eg-users-list'] = function () {
+        app.extensionSettings['issyrocks12-users-list'] = function () {
             return m.route(app.route('usersList'));
         };
 
@@ -16,8 +16,8 @@ System.register('avatar4eg/users-list/addUsersListPane', ['flarum/app', 'flarum/
             items.add('users-list', AdminLinkButton.component({
                 href: app.route('usersList'),
                 icon: 'users',
-                children: app.translator.trans('avatar4eg-users-list.admin.nav.users_button'),
-                description: app.translator.trans('avatar4eg-users-list.admin.nav.users_text')
+                children: app.translator.trans('issyrocks12-users-list.admin.nav.users_button'),
+                description: app.translator.trans('issyrocks12-users-list.admin.nav.users_text')
             }));
         });
     });
@@ -31,15 +31,15 @@ System.register('avatar4eg/users-list/addUsersListPane', ['flarum/app', 'flarum/
             AdminNav = _flarumComponentsAdminNav.default;
         }, function (_flarumComponentsAdminLinkButton) {
             AdminLinkButton = _flarumComponentsAdminLinkButton.default;
-        }, function (_avatar4egUsersListComponentsUsersListPage) {
-            CountriesPage = _avatar4egUsersListComponentsUsersListPage.default;
+        }, function (_issyrocks12UsersListComponentsUsersListPage) {
+            CountriesPage = _issyrocks12UsersListComponentsUsersListPage.default;
         }],
         execute: function () {}
     };
 });;
 'use strict';
 
-System.register('avatar4eg/users-list/components/EmailUserModal', ['flarum/app', 'flarum/components/Modal', 'flarum/components/Button'], function (_export, _context) {
+System.register('issyrocks12/users-list/components/EmailUserModal', ['flarum/app', 'flarum/components/Modal', 'flarum/components/Button'], function (_export, _context) {
     "use strict";
 
     var app, Modal, Button, EmailUserModal;

@@ -2,7 +2,7 @@ var gulp = require('flarum-gulp');
 
 gulp({
   modules: {
-    'avatar4eg/users-list': [
+    'issyrocks12/users-list': [
       '../lib/**/*.js',
       'src/**/*.js'
     ]

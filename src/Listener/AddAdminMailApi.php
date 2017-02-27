@@ -1,7 +1,7 @@
 <?php
-namespace Avatar4eg\UsersList\Listener;
+namespace issyrocks12\UsersList\Listener;
 
-use Avatar4eg\UsersList\Api\Controller\SendAdminEmailController;
+use issyrocks12\UsersList\Api\Controller\SendAdminEmailController;
 use Flarum\Api\Serializer\ForumSerializer;
 use Flarum\Event\ConfigureApiRoutes;
 use Flarum\Event\PrepareApiAttributes;
@@ -23,7 +23,7 @@ class AddAdminMailApi
      */
     public function configureApiRoutes(ConfigureApiRoutes $event)
     {
-        $event->post('/admin-mail', 'avatar4eg.users-list.create-mail', SendAdminEmailController::class);
+        $event->post('/admin-mail', 'issyrocks12.users-list.create-mail', SendAdminEmailController::class);
     }
 
 //    /**
@@ -32,7 +32,7 @@ class AddAdminMailApi
 //    public function prepareApiAttributes(PrepareApiAttributes $event)
 //    {
 //        if ($event->isSerializer(ForumSerializer::class)) {
-//            $event->attributes['canAddGeotags'] = $event->actor->can('avatar4eg.geotags.create');
+//            $event->attributes['canAddGeotags'] = $event->actor->can('issyrocks12.geotags.create');
 //        }
 //    }
 }
