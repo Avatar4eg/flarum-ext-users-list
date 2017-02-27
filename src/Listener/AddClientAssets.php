@@ -21,7 +21,7 @@ class AddClientAssets
                 __DIR__ . '/../../js/admin/dist/extension.js',
                 __DIR__ . '/../../less/admin/extension.less'
             ]);
-            $event->addBootstrapper('avatar4eg/users-list/main');
+            $event->addBootstrapper('issyrocks12/users-list/main');
         }
     }
 
