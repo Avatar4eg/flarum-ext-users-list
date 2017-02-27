@@ -1,5 +1,5 @@
 <?php
-namespace Avatar4eg\UsersList\Api\Controller;
+namespace issyrocks12\UsersList\Api\Controller;
 
 use Flarum\Core\Access\AssertPermissionTrait;
 use Flarum\Core\Repository\UserRepository;
