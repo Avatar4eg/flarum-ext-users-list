@@ -35,5 +35,5 @@ On admin panel click Users button to view users. For each user there are buttons
 ### Links
 
 - [on github](https://github.com/issyrocks12/flarum-ext-users-list)
-- [on packagist](https://packagist.com/packages/issyrocks12/flarum-ext-users-list)
+- [on packagist](https://packagist.org/packages/issyrocks12/flarum-ext-users-list)
 - [issues](https://github.com/issyrocks12/flarum-ext-users-list/issues)
