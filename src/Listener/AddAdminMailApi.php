@@ -23,7 +23,7 @@ class AddAdminMailApi
      */
     public function configureApiRoutes(ConfigureApiRoutes $event)
     {
-        $event->post('/admin-mail', 'avatar4eg.users-list.create-mail', SendAdminEmailController::class);
+        $event->post('/admin-mail', 'issyrocks12.users-list.create-mail', SendAdminEmailController::class);
     }
 
 //    /**
@@ -32,7 +32,7 @@ class AddAdminMailApi
 //    public function prepareApiAttributes(PrepareApiAttributes $event)
 //    {
 //        if ($event->isSerializer(ForumSerializer::class)) {
-//            $event->attributes['canAddGeotags'] = $event->actor->can('avatar4eg.geotags.create');
+//            $event->attributes['canAddGeotags'] = $event->actor->can('issyrocks12.geotags.create');
 //        }
 //    }
 }
