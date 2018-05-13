@@ -1,0 +1,26 @@
+avatar4eg-users-list:
+  admin:
+    nav:
+      users_button: => avatar4eg-users-list.ref.users_title
+      users_text: ユーザーリスト
+    page:
+      about_text:  フォーラム登録者のリスト
+      online_text: => core.forum.user.online_text
+      load_more_button: => core.ref.load_more
+      list_title: => avatar4eg-users-list.ref.users_title
+      mail_all_button: 一斉メール
+    modal_mail:
+      title_text: メッセージ
+      title_all_text: すべてのユーザー向け
+      email_label: To
+      subject_label: 件名
+      default_subject: => avatar4eg-users-list.ref.default_subject
+      message_label: 本文
+      submit_button: 送信
+
+  email:
+    default_subject: => avatar4eg-users-list.ref.default_subject
+
+  ref:
+    default_subject: フォーラム管理人からの連絡です。
+    users_title: ユーザー
